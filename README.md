@@ -9,3 +9,72 @@ Mapa Mental sobre a UniRota
 
 UserFlow
 <img width="3052" height="2004" alt="image" src="https://github.com/user-attachments/assets/9fcca189-7adf-4f4b-8b31-9c79f96c29c1" />
+
+# A Stack Escolhida
+
+### Linguagens e Ferramentas
+- HTML5
+- CSS3
+- PHP
+- JavaScript
+- MySQL
+- PDO
+- XAMPP
+
+### Funcionalidade Geral
+- Estrutura das páginas
+- Estilização e design do site
+- Interatividade e cálculos
+- Backend e processamento das funcionalidades
+- Banco de dados
+- Comunicação entre PHP e MySQL
+- Ambiente de desenvolvimento local
+- Apache
+- Servidor web local
+
+## Arquitetura Escolhida
+Frontend: HTML, CSS e JavaScript.
+
+Backend: PHP.
+
+Banco de dados: MySQL.
+
+Servidor de desenvolvimento: Apache (XAMPP).
+
+Modelo arquitetural: Cliente-servidor, com separação entre apresentação, lógica de aplicação e armazenamento de dados.
+
+# A Stack e Arquitetura Escolhida
+
+| **Linguagem** / **Ferramenta** | **Categoria** | **Funcionalidade Geral no Projeto** |
+| :--- | :--- | :--- |
+| **HTML5** | Frontend | Estrutura e marcação semântica das páginas. |
+| **CSS3** | Frontend | Estilização, design e identidade visual do site. |
+| **JavaScript** | Frontend | Interatividade, cálculos dinâmicos e validações. |
+| **PHP** | Backend | Processamento das regras de negócio e lógica do servidor. |
+| **MySQL** | Banco de Dados | Armazenamento estruturado de dados e informações. |
+| **PDO** | Segurança / Conexão | Comunicação segura e abstração entre o PHP e o MySQL. |
+| **XAMPP (Apache)** | Ambiente Local | Servidor web local para desenvolvimento e testes. |
+
+# Justificativa da Escolha (linguagem/ferramenta)
+A escolha das tecnologias utilizadas no desenvolvimento do UniRota considerou a facilidade de implementação, o baixo custo e a compatibilidade entre as ferramentas.
+
+HTML5: escolhido para estruturar as páginas e organizar os elementos do site.
+
+CSS3: utilizado para desenvolver a identidade visual, a organização dos elementos e a responsividade.
+
+JavaScript: escolhido para adicionar interatividade, realizar validações e executar cálculos, como a estimativa dos custos das viagens.
+
+PHP: utilizado no backend por permitir processar cadastros, logins, reservas e gerenciamento das caronas de maneira simples.
+
+MySQL: escolhido para armazenar e organizar os dados dos usuários, veículos, viagens, reservas e transações.
+
+PDO: utilizado para realizar a comunicação entre PHP e MySQL, oferecendo consultas mais seguras ao banco de dados.
+
+XAMPP: escolhido por reunir ferramentas necessárias para executar o projeto localmente, facilitando o desenvolvimento e os testes.
+
+Apache: utilizado como servidor web para executar o sistema no ambiente local.
+
+# Justificativa Geral
+A stack foi escolhida por utilizar tecnologias conhecidas, acessíveis e compatíveis entre si, facilitando o desenvolvimento e a manutenção do UniRota. Além disso, permite construir um sistema funcional sem exigir ferramentas pagas ou infraestrutura complexa, sendo adequada ao porte e aos objetivos do projeto acadêmico.
+
+
