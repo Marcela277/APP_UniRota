@@ -10,39 +10,6 @@ Mapa Mental sobre a UniRota
 UserFlow
 <img width="3052" height="2004" alt="image" src="https://github.com/user-attachments/assets/9fcca189-7adf-4f4b-8b31-9c79f96c29c1" />
 
-# A Stack Escolhida
-
-### Linguagens e Ferramentas
-- HTML5
-- CSS3
-- PHP
-- JavaScript
-- MySQL
-- PDO
-- XAMPP
-
-### Funcionalidade Geral
-- Estrutura das páginas
-- Estilização e design do site
-- Interatividade e cálculos
-- Backend e processamento das funcionalidades
-- Banco de dados
-- Comunicação entre PHP e MySQL
-- Ambiente de desenvolvimento local
-- Apache
-- Servidor web local
-
-## Arquitetura Escolhida
-Frontend: HTML, CSS e JavaScript.
-
-Backend: PHP.
-
-Banco de dados: MySQL.
-
-Servidor de desenvolvimento: Apache (XAMPP).
-
-Modelo arquitetural: Cliente-servidor, com separação entre apresentação, lógica de aplicação e armazenamento de dados.
-
 # A Stack e Arquitetura Escolhida
 
 | **Linguagem** / **Ferramenta** | **Categoria** | **Funcionalidade Geral no Projeto** |
