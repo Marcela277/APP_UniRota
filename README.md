@@ -6,3 +6,6 @@ Business Model Canvas:
 
 Mapa Mental sobre a UniRota
 <img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/926db155-ee09-4306-ab06-f6c17a3c0dca" />
+
+UserFlow
+<img width="3052" height="2004" alt="image" src="https://github.com/user-attachments/assets/9fcca189-7adf-4f4b-8b31-9c79f96c29c1" />
