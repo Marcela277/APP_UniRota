@@ -22,7 +22,7 @@ UserFlow
 | **PDO** | Segurança / Conexão | Comunicação segura e abstração entre o PHP e o MySQL. |
 | **XAMPP (Apache)** | Ambiente Local | Servidor web local para desenvolvimento e testes. |
 
-# Justificativa da Escolha (linguagem/ferramenta)
+## Justificativa da Escolha (linguagem/ferramenta)
 A escolha das tecnologias utilizadas no desenvolvimento do UniRota considerou a facilidade de implementação, o baixo custo e a compatibilidade entre as ferramentas.
 
 HTML5: escolhido para estruturar as páginas e organizar os elementos do site.
@@ -41,7 +41,7 @@ XAMPP: escolhido por reunir ferramentas necessárias para executar o projeto loc
 
 Apache: utilizado como servidor web para executar o sistema no ambiente local.
 
-# Justificativa Geral
+## Justificativa Geral
 A stack foi escolhida por utilizar tecnologias conhecidas, acessíveis e compatíveis entre si, facilitando o desenvolvimento e a manutenção do UniRota. Além disso, permite construir um sistema funcional sem exigir ferramentas pagas ou infraestrutura complexa, sendo adequada ao porte e aos objetivos do projeto acadêmico.
 
 
