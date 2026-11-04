@@ -10,7 +10,7 @@ Mapa Mental sobre a UniRota
 UserFlow
 <img width="3052" height="2004" alt="image" src="https://github.com/user-attachments/assets/9fcca189-7adf-4f4b-8b31-9c79f96c29c1" />
 
-# A Stack e Arquitetura Escolhida
+# Stack e Arquitetura Escolhida
 
 | **Linguagem** / **Ferramenta** | **Categoria** | **Funcionalidade Geral no Projeto** |
 | :--- | :--- | :--- |
