@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04/11/2026 às 21:44
+-- Tempo de geração: 06/11/2026 às 12:53
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -48,6 +48,20 @@ CREATE TABLE `caronas` (
   `data_publicacao` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `caronas`
+--
+
+INSERT INTO `caronas` (`id_carona`, `id_motorista`, `id_veiculo`, `origem`, `bairro_origem`, `destino`, `bairro_destino`, `cidade_origem`, `cidade_destino`, `latitude`, `longitude`, `data_hora`, `vagas`, `preco`, `distancia`, `somente_mulheres`, `status`, `data_publicacao`) VALUES
+(1, 1, 1, 'Av.Ibirapuera, 1036', 'Palmeiras', 'Av. Prestes Maia', 'FATEC', 'Araçatuba', 'Araçatuba', NULL, NULL, '2026-11-09 07:10:00', 3, 3.52, 20.00, 0, 'disponivel', '2026-11-06 08:30:26'),
+(5, 8, 7, 'Rua principal do Jardim Nova Yorque', 'Jardim Nova Yorque', 'Entrada do Unisalesiano', 'Centro', 'Araçatuba', 'Araçatuba', -21.1932000, -50.4235000, '2026-11-07 18:30:00', 2, 5.00, 6.80, 1, 'disponivel', '2026-11-06 08:49:40'),
+(6, 9, 8, 'Praça do bairro Concórdia', 'Concórdia', 'Entrada do UniToledo', 'Jardim Umuarama', 'Araçatuba', 'Araçatuba', -21.2231000, -50.4189000, '2026-11-09 07:15:00', 3, 4.50, 6.30, 0, 'disponivel', '2026-11-06 08:49:40'),
+(7, 9, 8, 'Praça do bairro Concórdia', 'Concórdia', 'Portaria da FATEC Araçatuba', 'Centro', 'Araçatuba', 'Araçatuba', -21.2231000, -50.4189000, '2026-11-08 18:45:00', 3, 4.50, 4.10, 0, 'disponivel', '2026-11-06 08:49:40'),
+(8, 10, 9, 'Terminal rodoviário de Birigui', 'Centro', 'Portaria principal da UNESP', 'Dona Amélia', 'Birigui', 'Araçatuba', -21.2889000, -50.3400000, '2026-11-08 06:30:00', 3, 12.00, 28.00, 0, 'disponivel', '2026-11-06 08:49:40'),
+(9, 11, 10, 'Praça central de Penápolis', 'Centro', 'Entrada do UniToledo', 'Jardim Umuarama', 'Penápolis', 'Araçatuba', -21.4139000, -50.0772000, '2026-11-07 06:00:00', 4, 18.00, 45.00, 0, 'disponivel', '2026-11-06 08:49:40'),
+(10, 7, 11, 'Portaria principal da UNESP', 'Dona Amélia', 'Praça da Vila Mendonça', 'Vila Mendonça', 'Araçatuba', 'Araçatuba', -21.1987000, -50.4496000, '2026-11-07 12:30:00', 2, 4.00, 5.20, 0, 'disponivel', '2026-11-06 08:49:40'),
+(11, 7, 11, 'Praça da Vila Mendonça', 'Vila Mendonça', 'Portaria principal da UNESP', 'Dona Amélia', 'Araçatuba', 'Araçatuba', -21.2145000, -50.4401000, '2026-11-07 07:00:00', 3, 4.00, 5.20, 0, 'disponivel', '2026-11-06 08:49:40');
+
 -- --------------------------------------------------------
 
 --
@@ -59,6 +73,18 @@ CREATE TABLE `carteiras` (
   `id_usuario` int(11) NOT NULL,
   `saldo` decimal(10,2) DEFAULT 0.00
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `carteiras`
+--
+
+INSERT INTO `carteiras` (`id_carteira`, `id_usuario`, `saldo`) VALUES
+(1, 1, 0.00),
+(9, 8, 0.00),
+(10, 9, 0.00),
+(11, 10, 0.00),
+(12, 11, 0.00),
+(13, 7, 0.00);
 
 -- --------------------------------------------------------
 
@@ -114,6 +140,18 @@ CREATE TABLE `usuarios` (
   `data_cadastro` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `nome`, `email`, `senha`, `telefone`, `curso`, `bairro`, `cidade`, `latitude`, `longitude`, `tipo`, `data_cadastro`) VALUES
+(1, 'Marcela', 'marcela@gmail.com', '$2y$10$YPYdnpJdGeQSYShUzL65lul028S2DW2mPEITKST2HQ9mnMV1aPnha', '18999999999', 'ADS', 'Palmeiras', 'Araçatuba', NULL, NULL, 'ambos', '2026-11-06 08:06:50'),
+(7, 'Rafael Almeida', 'rafael@exemplo.unirota', '$2b$12$Hp9QjC7Vwvvev6uIPdYzp.lSeAMNScrF0l4N7LUajjyr4hhbtIGuy', '(18) 99111-0001', 'Engenharia Civil', 'Vila Mendonça', 'Araçatuba', NULL, NULL, 'motorista', '2026-11-06 08:49:39'),
+(8, 'Juliana Costa', 'juliana@exemplo.unirota', '$2b$12$Hp9QjC7Vwvvev6uIPdYzp.lSeAMNScrF0l4N7LUajjyr4hhbtIGuy', '(18) 99111-0002', 'Enfermagem', 'Jardim Nova Yorque', 'Araçatuba', NULL, NULL, 'motorista', '2026-11-06 08:49:39'),
+(9, 'Lucas Martins', 'lucas@exemplo.unirota', '$2b$12$Hp9QjC7Vwvvev6uIPdYzp.lSeAMNScrF0l4N7LUajjyr4hhbtIGuy', '(18) 99111-0003', 'Ciência da Computação', 'Concórdia', 'Araçatuba', NULL, NULL, 'motorista', '2026-11-06 08:49:39'),
+(10, 'Mariana Souza', 'mariana@exemplo.unirota', '$2b$12$Hp9QjC7Vwvvev6uIPdYzp.lSeAMNScrF0l4N7LUajjyr4hhbtIGuy', '(18) 99111-0004', 'Medicina Veterinária', 'Centro', 'Birigui', NULL, NULL, 'motorista', '2026-11-06 08:49:39'),
+(11, 'Pedro Henrique', 'pedro@exemplo.unirota', '$2b$12$Hp9QjC7Vwvvev6uIPdYzp.lSeAMNScrF0l4N7LUajjyr4hhbtIGuy', '(18) 99111-0005', 'Administração', 'Centro', 'Penápolis', NULL, NULL, 'motorista', '2026-11-06 08:49:39');
+
 -- --------------------------------------------------------
 
 --
@@ -128,6 +166,18 @@ CREATE TABLE `veiculos` (
   `placa` varchar(10) NOT NULL,
   `capacidade` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `veiculos`
+--
+
+INSERT INTO `veiculos` (`id_veiculo`, `id_usuario`, `modelo`, `cor`, `placa`, `capacidade`) VALUES
+(1, 1, 'Ford Ka', 'Prata', 'HNC5J624', 4),
+(7, 8, 'Chevrolet Onix', 'Branco', 'EXB2C34', 4),
+(8, 9, 'VW Gol', 'Preto', 'EXC3D45', 4),
+(9, 10, 'Hyundai HB20', 'Vermelho', 'EXD4E56', 4),
+(10, 11, 'Toyota Corolla', 'Cinza', 'EXE5F67', 5),
+(11, 7, 'Fiat Argo', 'Prata', 'EXA1B23', 4);
 
 --
 -- Índices para tabelas despejadas
@@ -186,13 +236,13 @@ ALTER TABLE `veiculos`
 -- AUTO_INCREMENT de tabela `caronas`
 --
 ALTER TABLE `caronas`
-  MODIFY `id_carona` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_carona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `carteiras`
 --
 ALTER TABLE `carteiras`
-  MODIFY `id_carteira` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_carteira` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `reservas`
@@ -210,13 +260,13 @@ ALTER TABLE `transacoes`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `veiculos`
 --
 ALTER TABLE `veiculos`
-  MODIFY `id_veiculo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_veiculo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Restrições para tabelas despejadas
